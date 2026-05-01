@@ -1,27 +1,55 @@
 # Binance Futures Testnet Trading Bot
 
-A Python CLI trading bot that places MARKET and LIMIT orders on Binance Futures Testnet.
+A Python-based CLI trading bot built for the Primetrade.ai Python Developer Application Task.  
+This bot connects to Binance Futures Testnet and allows users to place MARKET and LIMIT orders with proper validation, logging, and clean modular code structure.
+
+---
 
 ## Features
 
-- MARKET orders
-- LIMIT orders
-- BUY / SELL support
-- Input validation
-- Logging
-- Error handling
-- Modular code structure
+✅ Place MARKET Orders  
+✅ Place LIMIT Orders  
+✅ BUY / SELL Support  
+✅ Binance Futures Testnet Integration  
+✅ Interactive CLI Input Mode  
+✅ Argument-based CLI Mode  
+✅ Input Validation  
+✅ Error Handling  
+✅ Request / Response Logging  
+✅ Clean Modular Structure
+
+---
+
+## Tech Stack
+
+- Python 3.x
+- python-binance
+- python-dotenv
+- argparse
+- logging
+
+---
 
 ## Project Structure
 
+```text
 trading_bot/
 │── bot/
-│   ├── client.py
-│   ├── orders.py
-│   ├── validators.py
-│   └── logging_config.py
+│   │── __init__.py
+│   │── client.py
+│   │── orders.py
+│   │── validators.py
+│   │── logging_config.py
+│
+│── logs/
+│   │── trading.log
+│
 │── cli.py
 │── requirements.txt
+│── .gitignore
+│── README.md
+│── .env   (local only, not uploaded)
+```
 
 ## Installation
 
@@ -31,8 +59,10 @@ pip install -r requirements.txt
 
 Create `.env`
 
-BINANCE_API_KEY=your_key
-BINANCE_API_SECRET=your_secret
+```
+BINANCE_API_KEY=lbcrvEIfCDdmFv9FqA4p9BXIlPqaEhC4mgCZ6X0Nrb0zYCOGhvHsDxyeowm40v0A
+BINANCE_API_SECRET=cJMnU6GerS85aWpXOn2VJ4LlyKkSLbvGxUv1ICb82N36d1MyA9phQ60wN9pfKMxf
+```
 
 ## Run Bot
 
