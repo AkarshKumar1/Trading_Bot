@@ -1,27 +1,21 @@
-# Environment variables
+# Secrets
 .env
 
-# Python cache
+# Python
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
 
-# Virtual environment
+# Virtual env
 venv/
-env/
 
-# IDE files
+# IDE
 .vscode/
 .idea/
 
-# OS files
+# OS
 .DS_Store
 Thumbs.db
 
 # Logs
-logs/*.log
-
-# Temporary files
-*.tmp
-*.bak
+logs/*
+!logs/trading.log
